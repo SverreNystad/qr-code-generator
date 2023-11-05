@@ -1,9 +1,7 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox
-from urllib.parse import urlparse
-from PIL import ImageTk, Image
+from tkinter import filedialog
+from PIL import ImageTk
 import os
-import io
 from qr_generator import generate_qr
 
 class QRCodeApp(tk.Tk):
