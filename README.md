@@ -9,7 +9,7 @@ This application is a simple command-line tool to generate QR codes from given U
 
 ## Installation
 ```bash
-pip install qrcode 
+pip install -r requirements.txt
 ```
 
 ## Usage
