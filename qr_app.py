@@ -3,6 +3,7 @@ from tkinter import filedialog, messagebox
 from urllib.parse import urlparse
 from PIL import ImageTk, Image
 import os
+import io
 from qr_generator import generate_qr
 
 class QRCodeApp(tk.Tk):
@@ -24,11 +25,14 @@ class QRCodeApp(tk.Tk):
 
         self.canvas = tk.Canvas(self, width=200, height=200)
         self.canvas.pack(pady=10)
+        self.img = None
 
     def generate(self):
         url = self.url_entry.get()
         try:
+            # Create a QR code image
             self.img = generate_qr(url)
+            # Ensure the image is in RGB mode
             self.update_qr_code(self.img)
             self.save_button.config(state=tk.NORMAL)
         except ValueError as e:

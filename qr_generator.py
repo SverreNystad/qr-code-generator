@@ -1,6 +1,6 @@
 import qrcode
 
-def generate_qr(url: str, filename="qr.png") -> None:
+def generate_qr(url: str, filename="qr.png"):
     # Generate QR code
     qr = qrcode.QRCode(
         version=1,
@@ -16,6 +16,7 @@ def generate_qr(url: str, filename="qr.png") -> None:
 
     # Save the image
     img.save(filename)
+    return img
 
 # Example usage:
 if __name__ == "__main__":
