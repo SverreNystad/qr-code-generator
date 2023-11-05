@@ -19,7 +19,7 @@ python main.py --url <URL> [--filename <FILENAME>]
 ```
 For the user interface, run the file "app.py" with the following command:
 ```bash
-python app.py
+python src/app.py
 ```
 
 ### Arguments
