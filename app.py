@@ -9,7 +9,7 @@ class QRCodeApp(tk.Tk):
         super().__init__()
 
         self.title("QR Code Generator")
-        self.geometry("400x400")
+        self.geometry("400x600")
 
         tk.Label(self, text="Enter URL:").pack(pady=10)
         self.url_entry = tk.Entry(self, width=40)
