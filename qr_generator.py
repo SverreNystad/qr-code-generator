@@ -1,6 +1,7 @@
 import qrcode
+from PIL import Image
 
-def generate_qr(url: str, filename="qr.png"):
+def generate_qr(url: str, filename="qr.png") -> Image:
     # Generate QR code
     qr = qrcode.QRCode(
         version=1,
