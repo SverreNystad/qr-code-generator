@@ -1,15 +1,16 @@
 # QR Code Generator
 This application is a simple command-line tool to generate QR codes from given URLs. The generated QR code is saved as an image file. It is also possible to run the application with a user interface. This is done by running the file "app.py" instead of "main.py".
-
-![UI](ui.png)
-
+<div align="center">
+  <img src="docs/ui.png">
+</div>
+  
 ## Requirements
 * Python 3.x
 
 
 ## Installation
 ```bash
-pip install qrcode 
+pip install -r requirements.txt
 ```
 
 ## Usage
